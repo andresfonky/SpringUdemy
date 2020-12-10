@@ -1,6 +1,6 @@
 package com.fonky.springboot.demo.mycoolapp.rest;
 
-/*import java.util.List;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -13,16 +13,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fonky.springboot.demo.mycoolapp.entity.Employee;
-import com.fonky.springboot.demo.mycoolapp.service.EmployeeServiceLegacy;*/
+import com.fonky.springboot.demo.mycoolapp.service.EmployeeService;
 
-//@RestController
-//@RequestMapping("/legacy/api")
-public class EmployeeRestControllerLegacy {
+@RestController
+@RequestMapping("/api")
+public class EmployeeRestController {
 	
-	/*private EmployeeServiceLegacy employeeService;
+	private EmployeeService employeeService;
 	
 	@Autowired
-	public EmployeeRestControllerLegacy(EmployeeServiceLegacy employeeService) {
+	public EmployeeRestController(EmployeeService employeeService) {
 		this.employeeService = employeeService;
 	}
 	
@@ -68,5 +68,5 @@ public class EmployeeRestControllerLegacy {
 		employeeService.delete(id);
 		
 		return "Deleted employee id - " + id;
-	}*/
+	}
 }

@@ -23,7 +23,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	//@Transactional //Included in JpaRepository
 	public List<Employee> getEmployees() {
-		List<Employee> employees = employeeRepository.findAll();
+		List<Employee> employees = employeeRepository.findAllByOrderByLastNameAsc();
 		return employees;
 	}
 

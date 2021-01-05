@@ -17,7 +17,7 @@ public class FunRestController {
 	@Value("${team.name}")
 	private String teamName;
 	
-	@GetMapping("/")
+	@GetMapping("/hello")
 	public String sayHello() {
 		return "HelloWorld! MyCoolApp and time is " + LocalDateTime.now();
 	}
